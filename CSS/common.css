@@ -2,7 +2,7 @@
 
 /*
 ** Github : http://github.com/ingether/TGD-CSS/
-** assets : http://github.com/ingether/assets/
+** assets : http://github.com/ingether/resource/
 ** Copyright(c) 2017-2019 All rights reserved by nanajam777 (contact: friendshiping777@gmail.com)
 **
 ** 잉게더는 트게더의 커스텀 CSS 운영정책을 존중합니다.
@@ -18,24 +18,24 @@
     --color2: #0099ff;
     --color3: #96c7f7;
 
-    --img-badge: url("https://ingether.github.io/assets/image/badge.png");
-    --img-totop: url("https://ingether.github.io/assets/image/movetotop.png");
+    --img-badge: url("https://ingether.github.io/resource/image/badge.png");
+    --img-totop: url("https://ingether.github.io/resource/image/movetotop.png");
 
-    --bg-img1-t: url("https://ingether.github.io/assets/emoji/24/ok.png");
-    --bg-img2-t: url("https://ingether.github.io/assets/emoji/24/ace.png");
-    --bg-img3-t: url("https://ingether.github.io/assets/emoji/24/appear.png");
-    --bg-img4-t: url("https://ingether.github.io/assets/emoji/24/clap.png");
-    --bg-img5-t: url("https://ingether.github.io/assets/emoji/24/salute.png");
-    --bg-img6-t: url("https://ingether.github.io/assets/emoji/24/boq.png");
-    --bg-img7-t: url("https://ingether.github.io/assets/emoji/24/taebo.png");
-    --bg-img8-t: url("https://ingether.github.io/assets/emoji/24/sg.png");
-    --bg-img9-t: url("https://ingether.github.io/assets/emoji/24/sexy.png");
-    --bg-img10-t: url("https://ingether.github.io/assets/emoji/24/bang.png");
-    --bg-img11-t: url("https://ingether.github.io/assets/emoji/24/hamo.png");
-    --bg-img12-t: url("https://ingether.github.io/assets/emoji/24/dw.png");
-    --bg-img13-t: url("https://ingether.github.io/assets/emoji/24/kkk.png");
-    --bg-img14-t: url("https://ingether.github.io/assets/emoji/24/wink.png");
-    /* --bg-img15-t: url("https://ingether.github.io/assets/emoji/24/light.png"); */
+    --bg-img1-t: url("https://ingether.github.io/resource/emoji/24/ok.png");
+    --bg-img2-t: url("https://ingether.github.io/resource/emoji/24/ace.png");
+    --bg-img3-t: url("https://ingether.github.io/resource/emoji/24/appear.png");
+    --bg-img4-t: url("https://ingether.github.io/resource/emoji/24/clap.png");
+    --bg-img5-t: url("https://ingether.github.io/resource/emoji/24/salute.png");
+    --bg-img6-t: url("https://ingether.github.io/resource/emoji/24/boq.png");
+    --bg-img7-t: url("https://ingether.github.io/resource/emoji/24/taebo.png");
+    --bg-img8-t: url("https://ingether.github.io/resource/emoji/24/sg.png");
+    --bg-img9-t: url("https://ingether.github.io/resource/emoji/24/sexy.png");
+    --bg-img10-t: url("https://ingether.github.io/resource/emoji/24/bang.png");
+    --bg-img11-t: url("https://ingether.github.io/resource/emoji/24/hamo.png");
+    --bg-img12-t: url("https://ingether.github.io/resource/emoji/24/dw.png");
+    --bg-img13-t: url("https://ingether.github.io/resource/emoji/24/kkk.png");
+    --bg-img14-t: url("https://ingether.github.io/resource/emoji/24/wink.png");
+    /* --bg-img15-t: url("https://ingether.github.io/resource/emoji/24/light.png"); */
 }
 
 /* change popular posts' icon */
