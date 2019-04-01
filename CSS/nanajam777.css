@@ -1,0 +1,497 @@
+/* sort by Beautify */
+
+@import url("https://ingether.github.io/TGD-CSS/CSS/common.css");
+
+/*
+** Github : http://github.com/ingether/TGD-CSS/
+** assets : http://github.com/ingether/assets/
+** Copyright(c) 2017-2019 All rights reserved by nanajam777 (contact: friendshiping777@gmail.com)
+**
+** 잉게더는 트게더의 커스텀 CSS 운영정책을 존중합니다.
+**
+** 잉게더 디자인에 기여하고 싶으시다면, Pull request 해주세요. 
+** 검토 후 Merge 하도록 하겠습니다.
+** 해당 관련 문의 ingether@hotmail.com
+*/
+
+@font-face {
+    font-family: 'BRRA_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRRA_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --img-main: url("https://ingether.github.io/assets/image/main.png");
+    --img-logo: url("https://ingether.github.io/assets/image/title.png");
+
+    --bg-img1: url("https://ingether.github.io/assets/emoji/112/ok.gif");
+    --bg-img2: url("https://ingether.github.io/assets/emoji/112/ace.gif");
+    --bg-img3: url("https://ingether.github.io/assets/emoji/112/appear.gif");
+    --bg-img4: url("https://ingether.github.io/assets/emoji/112/clap.gif");
+    --bg-img5: url("https://ingether.github.io/assets/emoji/112/salute.gif");
+    --bg-img6: url("https://ingether.github.io/assets/emoji/112/boq.gif");
+    --bg-img7: url("https://ingether.github.io/assets/emoji/112/taebo.gif");
+    --bg-img8: url("https://ingether.github.io/assets/emoji/112/sg.gif");
+    --bg-img9: url("https://ingether.github.io/assets/emoji/112/sexy.gif");
+    --bg-img10: url("https://ingether.github.io/assets/emoji/112/bang.gif");
+    --bg-img11: url("https://ingether.github.io/assets/emoji/112/hamo.gif");
+    --bg-img12: url("https://ingether.github.io/assets/emoji/112/dw.gif");
+    --bg-img13: url("https://ingether.github.io/assets/emoji/112/kkk.gif");
+    --bg-img14: url("https://ingether.github.io/assets/emoji/112/wink.gif");
+    /* --bg-img15: url("https://ingether.github.io/assets/emoji/112/light.png"); */
+}
+
+/* 배경 그라디언트 */
+html {
+    height: auto !important;
+    background: linear-gradient(to bottom, #ffffff, #d0e6fc, #70b7ff);
+}
+
+body {
+    background: transparent;
+}
+
+/* 프로필 이미지 트랜지션  */
+.img-circle:hover {
+    border-radius: 20%;
+    transition: all ease-in-out .1s;
+}
+
+/* 헤더 상단 조절 */
+header #header-bar {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* 헤더 상단 바  */
+header #header-bar>.row {
+    background: linear-gradient(-45deg, #70b7ff, #99ccff, #d4eeff, #d0e6fc);
+    background-size: 400% 400%;
+    animation: background-pos 20s ease infinite;
+    -moz-animation: background-pos 20s ease infinite;
+    -webkit-animation: background-pos 20s ease infinite;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border: none;
+}
+
+/* 트게더 메인으로 */
+header .row>div:nth-child(1)>a {
+    background-repeat: no-repeat;
+    background-image: var(--img-main);
+    background-size: 120px;
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin-top: 2em;
+}
+
+header .row>div:nth-child(1)>a img {
+    display: none;
+}
+
+/* 타이틀 이미지  */
+.fa-user:before {
+    content: var(--img-logo);
+    left: 236px;
+    top: -134px;
+    position: absolute;
+}
+
+/* 검색창  */
+header #right-search-form>#right-search-btn {
+    color: #70b7ff;
+    background: transparent;
+    border: none;
+    font-size: 1.4em;
+}
+
+header #right-search-form>input[type=text] {
+    position: relative;
+    border: 3px solid #70b7ff;
+    background: #fff;
+    font-size: 1.1em;
+    padding: 0.3em 0.5em;
+}
+
+/* 닉네임, 댓글 수 컬러링 */
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged,
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #4078b1;
+}
+
+/* 트게더 전광판 */
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #0099ff;
+    padding: 4px 8px;
+    color: #fff;
+    font-weight: bold
+}
+
+/* 읽은 게시글 숨기기 버튼 */
+#article-list #article-option-area>#article-option-area-toggle-btn {
+    position: relative;
+    right: 14px;
+    background-color: transparent;
+    border: 2px #99ccff;
+    color: blue;
+}
+
+/* 트게더 메뉴 버튼 패딩 추가 */
+#main .menu-wrapper>a {
+    padding: 8px 3px
+}
+
+/* 트게더 메뉴 버튼 테두리  */
+#main .menu-wrapper {
+    border: 2px solid #99ccff
+}
+
+/* 트게더 메뉴 마우스 오버 애니메이션 */
+#main .menu-wrapper>a:hover {
+    background-color: #dddddd;
+    transition: all ease-in-out .1s;
+}
+
+/* 트게더 메뉴 구성요소 */
+#main .menu-wrapper>a>em {
+    color: #99ccff;
+}
+
+#main .menu-wrapper>a>i.fa.fa-square {
+    color: #99ccff;
+}
+
+/* 메인 프레임 테두리  */
+#main #main-content>div.frame {
+    border-radius: 0px 0px 15px 15px;
+    border: 2px solid #99ccff
+}
+
+/* 게시글 패딩 */
+#article-list>.article-list-row>.item>.list-time,
+#article-list>.article-list-row>.item>.list-title,
+#article-list>.article-list-row>.item>.list-header,
+#article-list>.article-list-row>.item>.list-blocked,
+#article-list>.article-list-row>.item>.list-category,
+#article-list>.article-list-row>.item>.list-checkbox {
+    padding: 10px 0 10px 0;
+    vertical-align: middle;
+}
+
+
+/* nav box category distribute */
+#main .menu-wrapper .spacer {
+    background: rgba(95, 02, 22, 0);
+    height: 4px;
+}
+
+/* 트게더 메뉴 카테고리 헤더 */
+/* #main .menu-wrapper > .header {
+    background: -webkit-linear-gradient(45deg, #70b7ff 10%,#96c7f7 100%);
+    color: #fff; padding: 0.45em 1.4em 0.45em 1em; font-weight: bold; border-radius: 10px 10px 0 0;
+} */
+#main .menu-wrapper>.header {
+    background: #99ccff;
+    color: #ffffff;
+    padding: 9px 12px
+}
+
+/* 공지 포스트 마우스 호버 */
+#article-list>.article-list-row.notice {
+    transition: all ease-in-out .1s;
+}
+
+#article-list>.article-list-row.notice:hover {
+    background-color: #d4eeff;
+    transition: all ease-in-out .1s;
+}
+
+/* hot post background */
+#article-list>.article-list-row.hot {
+    background-color: aliceblue;
+}
+
+#article-list>.article-list-row.hot>.item>.list-title>a:hover {
+    color: black !important;
+}
+
+/* 일반 포스트 마우스 호버  */
+/* #article-list > .article-list-row > .item > .list-title:hover { 
+    animation: 30s greyout-color; 
+} */
+
+#article-content-wrapper>.header {
+    border-top: 3px solid #0099ff;
+    background: #d4eeff;
+}
+
+#article-content-wrapper>.footer {
+    border-bottom: 3px solid #0099ff;
+    background: #d4eeff;
+}
+
+#article-list #article-list-category>a {
+    display: inline-block;
+    padding: 14px 18px;
+    background: #d4eeff;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+#article-list #article-list-category>a:hover {
+    background: #99ccff;
+    transition: all ease-in-out .2s;
+    color: white !important;
+    ;
+}
+
+/* go live stream */
+/* #board-info h1 > a.badge.badge-live::after { font-size: 12px; content: " 생방 보기"; } */
+
+/* category background */
+#article-list #article-list-category {
+    border-top: 0px;
+    border-bottom: 3px solid #99ccff;
+    background-color: #ffffff;
+
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header {
+    background: #d4eeff;
+}
+
+#article-reply-area>.header h5 {
+    font-size: 14px;
+    color: #0099ff;
+    font-weight: bold;
+}
+
+/* like highlighter */
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: transparent;
+    color: #0099ff;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: 'BRRA_R';
+}
+
+#board-info {
+    height: auto;
+}
+
+#board-info h1>a {
+    font-weight: 600;
+    font-family: 'BRRA_R';
+    font-size: 34px;
+}
+
+#board-info h1>a:hover {
+    color: #29ABE2;
+    font-weight: 700;
+    transition: all 150ms ease-in-out;
+
+}
+
+/* viewers */
+#board-info #viewers-area #viewers {
+    color: #4078b1;
+    font-weight: 400;
+    font-family: 'BRRA_R';
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "잉게더 망령 ";
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "명 행복행복";
+    cursor: text;
+}
+
+/* profile border */
+#board-info #board-info-profile-img {
+    border: 2px solid #0099ff;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+}
+
+#board-info #board-info-bottom a {
+    color: #4078b1;
+    font-weight: 400;
+    font-family: 'BRRA_R';
+    font-size: 14px;
+    margin: .1em;
+}
+
+/* 키프레임 */
+@-webkit-keyframes background-pos {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@-moz-keyframes background-pos {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@keyframes background-pos {
+    0% {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+/** 글작성 후 보이는 이미지 수정**/
+.fr-emoticon.fr-deletable>img[alt=JKanStyle] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img1);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=OptimizePrime] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img2);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=StoneLightning] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img3);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=TheRinger] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img4);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=RedCoat] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img5);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=Kappa] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img6);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=JonCarnage] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img7);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=BCWarrior] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img8);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=GingerPower] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img9);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=DansGame] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img10);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=SwiftRage] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img11);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=PJSalt] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img12);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=KevinTurtle] {
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img13);
+    background-size: 100%;
+}
+
+.fr-emoticon.fr-deletable>img[alt=ArsonNoSexy] {
+    width: 224px !important;
+    height: 224px !important;
+    padding-left: 224px !important;
+    background-image: var(--bg-img14);
+    background-size: 100%;
+}
+
+/* .fr-emoticon.fr-deletable > img[alt=SMOrc]{ 
+    width: 112px !important;
+    height: 112px !important;
+    padding-left: 112px !important;
+    background-image: var(--bg-img15);
+    background-size: 100%; 
+} */
