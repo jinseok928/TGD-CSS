@@ -370,8 +370,16 @@ span.a-badge {
     width: 35px
 }
 
+#article-list>.article-list-row>.item>.list-title {
+    max-width: 100% !important;
+}
+
 #article-list>.article-list-row>.item>a.list-title>.title-value {
-    max-width: 80%;
+    max-width: 240px;
+}
+
+#article-list>.article-list-row>.item>.list-header {
+    min-width: 40px;
 }
 
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
