@@ -94,10 +94,10 @@ header .row>div:nth-child(1)>a img {
 }
 
 /* 타이틀 이미지  */
-.fa-user:before {
+.col-xs-4:nth-child(1):before {
     content: var(--img-logo);
-    left: 236px;
-    top: -134px;
+    left: 428px;
+    top: 10px;
     position: absolute;
 }
 
