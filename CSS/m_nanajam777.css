@@ -378,10 +378,6 @@ span.a-badge {
     max-width: 240px;
 }
 
-#article-list>.article-list-row>.item>.list-header {
-    min-width: 40px;
-}
-
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
     padding: 0 1px;
     color: #4078b1
