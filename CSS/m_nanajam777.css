@@ -630,6 +630,7 @@ img[alt="KevinTurtle"],
     background-size: 50px 50px;
 }
 
+img[alt="ArsonNoSexy"],
 #article-content-wrapper #article-content img[alt="ArsonNoSexy"] {
     background: var(--bg-img14);
     width: 100px;
