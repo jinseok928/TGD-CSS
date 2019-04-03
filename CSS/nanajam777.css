@@ -293,6 +293,9 @@ header #header-bar #header-top-notice strong.notice-badge {
 #board-info h1>a {
     font-weight: 600;
     font-family: 'BRRA_R';
+}
+
+#board-info h1>a:nth-child(1) {
     font-size: 34px;
 }
 
